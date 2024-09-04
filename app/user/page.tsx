@@ -3,7 +3,7 @@ import axios from 'axios'
 // import { log } from 'console'
 import React, { useEffect, useState } from 'react'
 
-export default function page() {
+export default function Page() {
     const [product,setProduct]=useState<any>();
     useEffect(()=>{
         axios.get("http://localhost:3001/api/user")
